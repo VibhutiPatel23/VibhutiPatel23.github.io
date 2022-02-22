@@ -7,6 +7,7 @@ header{
     height:50px;
     background-color:gray;
     text-align: center;
+    margin-top: -20px;
 }
 img{
     padding-left: 300px;
@@ -34,12 +35,15 @@ img{
     font-size: 20px;
 }
 main{
-    color: grey;
+    color:#f5f5f5;
+    scroll-behavior: smooth;
 }
+
 ul{
     display: flex;
     flex-direction: row;
     text-align: center;
+    justify-content: space-around;
   }
 
 li{
@@ -48,17 +52,15 @@ li{
     padding-top: 10px;
     font-size: 20px;
     font-family: FreeMono, monospace;
-    
-   
 }
 
 li a{
-    color: #ffffff;
+    color: #f5f5f5;
     text-decoration: none;
     text-align: center;
 }
 h1{
-    color: #484848;
+    color: #f5f5f5;
     font-size: 20px;
     font-weight: bold;
     font-family: monospace;
@@ -86,8 +88,19 @@ h1{
   #two
   {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border: #ffffff 3px solid;
+  }
+  #three
+  {
+      border: #ffffff 3px solid;
+  }
+  #fivehead
+  {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   #skilhead
   {
@@ -100,16 +113,62 @@ h1{
   {
     display: flex;
     flex-direction: column;
-    ;
+    width: 20%;
+    margin-left: 20%;
+    
+  }
+  #skillli p{
+      margin-top: -20%;
+  }
+  #css,#js,#react
+  {
+    height:80px;
+    width:100px;
+  }
+  #db
+  {
+      height:60px;
+      width: 100px;
+  }
+  #abouthead
+  {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  }
+  #aboutp
+  {
+      font-size: 25px;
+      justify-content: space-around;
+      text-indent: 5%;
+      padding-left: 5%;
+      padding-right: 5%;
+      text-align: justify;
+
+  }
+  .pimg
+  {
+    padding-left: 40px;
+    /* padding-top: 5px; */
+    padding-bottom: 5px;
+    height: 400px;
+    
+  }
+  #five
+  {
+      display: flex;
+      flex-direction: row;
   }
   #four
   {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border: #ffffff 3px solid;
   }
   footer {
-	color: rgb(255, 255, 254);
+	color: #f5f5f5;
 	font-size: 15px;
 	padding-left: 40px;
 	padding-right: 40px;
@@ -124,9 +183,9 @@ h1{
 #footerCopyright {
 	text-align: center;
 	font-size: 18px;
-    color:#ffffff;
+    color:#f5f5f5;
 	padding-bottom: 20px;
-	padding-top: 250px;
+	/* padding-top: 250px; */
 }
 
 #footerContents li {
@@ -148,12 +207,12 @@ h1{
 
 footer a {
 	text-decoration: none;
-	color: #E5E8EB;
+	color: #f5f5f5;
 	font-size: 18px
 }
 
 footer h5 {
-	color: #F5F5F5;
+	color: #f5f5f5;
 	font-size: 20px;
 	margin: 0px;
 	text-align: left;
@@ -197,16 +256,16 @@ footer textarea {
 }
 
 footer a:link {
-	color: rgba(255, 255, 255, 0.7);
+	color: #f5f5f5;
 }
 
-footer a:visited {
-	color: rgba(205, 202, 185, .1);
+/* footer a:visited {
+	color:rg;
 }
 
 footer a:hover {
-	color: rgba(255, 250, 179, .9);
-}
+	color: grey;
+} */
 
 #divFooterForm form {
 	display: flex;
@@ -225,7 +284,7 @@ footer a:hover {
 {
     display: flex;
 	flex-direction: column;
-    color:#ffffff;
+    color:#f5f5f5;
 }
 #divFooterForm {
 	padding-top: 15px;
@@ -240,7 +299,109 @@ footer a:hover {
 	width: 100px;
 	font-size: 18px;
 }
-#mobile
-{
-	display: none;
+
+@media (max-width: 768px) {
+    header{
+        height:100px;
+        background-color:gray;
+        text-align: center;
+        margin-top: -20px;
+    }
+	body {
+		width: 100%;
+	}
+	#one
+    {
+        display: block;
+        justify-content: center;
+        
+    }
+    #three
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    #db,#css,#js,#react
+    {
+        height:30px;
+        width: 30px;
+    }
+    .pimg
+    {
+        /* display: flex;
+        flex-direction: row; */
+        height: 200px; 
+         width: 150px;
+
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+	nav {
+		display: flex;
+		flex-direction: column;
+		font-size: 28px;
+	}
+	nav a {
+		padding-bottom: 10px;
+		border-bottom: 1px solid #ffffff;
+	}
+	#searchBox input {
+		padding-top: 5px;
+		width: 100%;
+		border-radius: 10px;
+		border: 0px;
+	}
+	
+	 ::placeholder {
+		font-size: 16px;
+		text-align: center;
+	}
+	.btnStyles {
+		width: 100%;
+	}
+	main h1 {
+		width: 80%;
+		margin: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	footer {
+		font-size: 22px;
+		height: auto;
+		padding-left: 0px;
+	}
+	#footerCopyright {
+		font-size: 14px;
+	}
+	#footerContents li {
+		font-size: 18px;
+	}
+	#footerContents {
+		flex-direction: column;
+		padding-left: 0px;
+	}
+	footer a {
+		font-size: 18px
+	}
+	footer h5 {
+		font-size: 24px;
+	}
+	#divFooterForm {
+		padding-left: 40px
+	}
+	footer input[type="text"] {
+		width: 100%;
+		height: 25px;
+		;
+	}
+	footer textarea {
+		width: 100%;
+	}
+	#ftrSubmit {
+		width: 100%;
+	}
 }
